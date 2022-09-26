@@ -1,0 +1,15 @@
+{
+    "name": "andreu/99_bottles_of_oop",
+    "autoload": {
+        "psr-4": {
+            "Andreu\\99BottlesOfOop\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andreu Ramos",
+            "email": "andreu.ramos.amengual@gmail.com"
+        }
+    ],
+    "require": {}
+}
