@@ -2,7 +2,12 @@
     "name": "andreu/99_bottles_of_oop",
     "autoload": {
         "psr-4": {
-            "Andreu\\99BottlesOfOop\\": "src/"
+            "BottlesOfOop\\": "src/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.1"
         }
     },
     "authors": [
