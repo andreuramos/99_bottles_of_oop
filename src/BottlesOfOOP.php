@@ -4,11 +4,13 @@ namespace BottlesOfOop;
 
 class BottlesOfOOP
 {
-    public function run(): void
+    public function run(): string
     {
+        $song = '';
         for ($i=99; $i>=0; $i--) {
-            echo $this->verse($i);
+            $song .= $this->verse($i);
         }
+        return $song;
     }
 
     private function verse(int $i)
@@ -23,6 +25,6 @@ class BottlesOfOOP
         }
 
         return "$initialBeersOnTheWall bottles of beer on the wall, " . strtolower($initialBeersOnTheWall) . " bottles of beer.\n" .
-            "{$verseAction}, $beersLeftOnTheWall bottles of beer in the wall.\n\n";
+            "{$verseAction}, $beersLeftOnTheWall bottles of beer on the wall.\n\n";
     }
 }

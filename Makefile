@@ -8,7 +8,7 @@ install:
 	docker run --rm -it -v $(PWD):/code $(IMAGE_NAME) composer install
 
 test:
-	docker run --rm -it -v $(PWD):/code $(IMAGE_NAME) vendor/bin/phpunit
+	docker run --rm -it -v $(PWD):/code $(IMAGE_NAME) vendor/bin/phpunit test/BottlesOfOOPTest.php
 
 run:
 	docker run --rm -it -v $(PWD):/code $(IMAGE_NAME) php index.php
